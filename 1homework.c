@@ -1,4 +1,4 @@
-과제
+과제 main
 
 dev dev
 dev
