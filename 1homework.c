@@ -1,5 +1,5 @@
-과제
-dev
-dev dev
-dev
+#include <stdio.h>
 
+int main(void){
+    
+}
