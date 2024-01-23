@@ -1,0 +1,64 @@
+h1{
+    text-align: center;
+    font-size: 45px;
+
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* div {
+    width: 350px;
+    height: 100px;
+    padding: 20px;
+} */
+
+li{
+    font-size: 20px;
+}
+
+
+/* div.box1{
+    margin-top: 20px;
+    border: 1px solid #000000;
+    padding: 0.5em;
+    height: 150px;
+    width: 350px;
+
+} */
+
+.background{
+    background-image: url(https://i.pinimg.com/originals/58/18/92/581892a6b895a958afb3b6550c6ac778.jpg);
+    background-size: cover;
+    padding-left: 30px;
+}
+
+
+table{
+    width: 50%;
+    padding: 15px;
+    border : 2px solid black;
+    border-collapse : collapse;
+}
+
+/* td{
+    text-align: center;
+    padding:15px;
+
+    border : 2px solid black;
+    border-collapse : collapse;
+} */
+
+
+/* table, td{
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    border-collapse: collapse;
+    border : 2px solid black;
+    border-collapse : collapse;
+  };
+
+  th{
+    text-align: left;
+  } */

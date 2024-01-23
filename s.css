@@ -1,0 +1,9 @@
+h1 {
+    background-color: aliceblue;
+    color: cadetblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: dashed;
+    margin-top: 100px;
+}
