@@ -1,0 +1,56 @@
+<html>
+	<head>
+		
+		<title>This is first page.</title>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>id</td>
+				<td>name</td>
+				<td>email</td>
+				<td>gender</td>
+				<td>age</td>
+			</tr>
+		</table>
+	</body>
+</html>
+
+<script>
+
+const gender = document.location.pathname.split("/")[1];
+const age = document.location.pathname.split("/")[2];
+
+const backendfunc = async () =>{
+    const dbdata = await fetch(`http://43.201.68.167:8080/api/${gender}/${age}`,{
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+        .then((res)=> res.json())
+        .then((data)=>{
+            console.log(data);
+            const table = document.querySelector("table");
+
+            data.map((x)=>{
+                const tr = document.createElement("tr");
+
+                [x.id, x.name, x.email, x.gender, x.age].map((y)=>{
+                    const td = document.createElement("td");
+                    td.innerHTML = y;
+                    tr.appendChild(td);
+                });
+
+                table.appendChild(tr);
+
+            });
+
+            return data;
+        })
+        .catch((err) => console.log(err));
+};
+
+backendfunc();
+</script>
