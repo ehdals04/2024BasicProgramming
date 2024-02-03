@@ -4,24 +4,44 @@
     <link rel="stylesheet" href="login.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
+    <title>Login</title>
 </head>
 <body>
     <div class="background">
         
         <div class="wraper">
             <div class="container">
-                <h1>Log in</h1>
+                <h1>Login</h1>
+
+
+                <div>
                 <input class="login_box" type="text" placeholder="Username"><br>
                 <input class="login_box" type="password" placeholder="password"><br>
-    
-                <label for="checkbox">
+                </div>
+                
+
+                <div>
                     <input type="checkbox" name="remember_password" value="remember_password" >
-                    <span style="vertical-align:top;">자동로그인</span>
-                </label>
+                    <label for="checkbox">
+                        <span class="login_status" style="vertical-align:top;">로그인 상태 유지</span>
+                        <span class="register">
+                            <a href="">회원가입</a>
+                        </span>
+                    </label>
+                </div>
+                <br>
     
-                <button>Log in</button>
+                <button>Login</button>
+
+                <div class="serch_box">
+                    <span class="serch">
+                        <a href="">아이디 찾기</a>
+                        <a href="">비밀번호 찾기</a>
+                    </span>
+                </div>
             </div>
+
+            
         </div>
     </div>
 

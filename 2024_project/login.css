@@ -8,6 +8,7 @@ body{
     box-sizing: border-box;
 }
 
+/*전체 배경*/
 .background{
     background-image: url("img_file/b77a965b426ccb070b86886d6040f015_waifu2x_art_noise1.png");
     width: 100%;
@@ -21,9 +22,10 @@ body{
     align-items: center;
 }
 
+/*로그인 전체 박스*/
 .container{
     width: 400px;
-    border: 2px solid rgba(255, 255, 255, 2);
+    border: 2px solid white;
     text-align: center;
     backdrop-filter: blur(15px);
     background: transparent;
@@ -34,17 +36,68 @@ body{
     padding: 30px, 0px;
     padding-bottom: 40px;
     color: white;
+    margin-top: 10px;
 }
 
-input{
+/* 아이디 비밀번호 적는 칸*/
+.login_box{
     background: none;
     width: 75%;
     padding: 13px;
     margin-bottom: 20px;
     border: 2px solid rgba(255, 255, 255, 2);
+    color: white;
+    border-radius: 10px ;
 }
-
+.login_box:hover{
+    transform: scale(1.03);
+}
 input::placeholder{
     color: white;
 }
 
+/*회원가입*/
+.register{
+    margin-left: 85px;
+    text-decoration: none;
+}
+
+/*로그인 버튼*/
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    background: transparent;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.03);
+}
+
+a{
+    text-decoration-line: none;
+    color: white;
+    font-size: 14px;
+}
+
+.login_status{
+    color: white;
+    font-size: 14px;
+}
+
+
+.serch_box{
+    margin-left: 180px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.serch{
+    display: flex;
+    justify-content: space-between;
+}
